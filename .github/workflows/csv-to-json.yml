@@ -1,5 +1,10 @@
 name: Convert CSV to JSON
 
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
 on:
   push:
     branches: [ main, develop ]
