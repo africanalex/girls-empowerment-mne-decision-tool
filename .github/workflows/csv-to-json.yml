@@ -27,6 +27,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
       
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -43,7 +46,6 @@ jobs:
         cat > convert-csv.js << 'EOF'
         const fs = require('fs');
         const csv = require('csv-parser');
-        const path = require('path');
 
         // Get command line arguments
         const csvFile = process.argv[2] || 'methodologies.csv';
@@ -60,12 +62,6 @@ jobs:
           
           headers.forEach((header, index) => {
             if (index === 0) return; // Skip method name column
-            
-            // Skip special columns that aren't category-option pairs
-            const headerLower = header.toLowerCase().trim();
-            if (headerLower === 'link' || headerLower === 'url' || headerLower === 'reference') {
-              return;
-            }
             
             // Match pattern "Category - Option"
             const match = header.match(/^(.+?)\s*-\s*(.+)$/);
@@ -96,7 +92,7 @@ jobs:
 
         // Function to process a single method row
         function processMethod(row, headers) {
-          const methodName = Object.values(row)[0];
+          const methodName = row['Method Name'];
           if (!methodName || methodName.trim() === '') return null;
           
           const method = {
@@ -109,21 +105,8 @@ jobs:
           headers.forEach((header, index) => {
             if (index === 0) return;
             
-            const value = Object.values(row)[index];
-            if (!value || value.trim() === '') return;
-            
-            // Handle special columns that aren't category-option pairs
-            const headerLower = header.toLowerCase().trim();
-            
-            // Handle Link column specially
-            if (headerLower === 'link' || headerLower === 'url' || headerLower === 'reference') {
-              const url = value.toString().trim();
-              // Basic URL validation
-              if (url && (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('www.'))) {
-                method.link = url.startsWith('www.') ? `https://${url}` : url;
-              }
-              return;
-            }
+            const value = row[header];
+            if (!value) return;
             
             // Handle category-option columns
             const match = header.match(/^(.+?)\s*-\s*(.+)$/);
@@ -140,8 +123,8 @@ jobs:
               }
               
               // Add the option if the value indicates true/yes (handles various boolean representations)
-              const truthyValues = ['true', 'yes', '1', 'x', 'TRUE', 'YES', 'X'];
-              if (truthyValues.includes(value.toString().trim())) {
+              const truthyValues = ['true', 'yes', '1', 'x', 'TRUE', 'YES', 'X', true, 1];
+              if (truthyValues.includes(value)) {
                 if (!method.attributes[categoryId].includes(optionName)) {
                   method.attributes[categoryId].push(optionName);
                 }
@@ -159,7 +142,6 @@ jobs:
         }
 
         let headers = [];
-        let firstRow = true;
 
         fs.createReadStream(csvFile)
           .pipe(csv())
@@ -199,29 +181,8 @@ jobs:
               console.log(`📊 Statistics:`);
               console.log(`   - Categories: ${jsonData.categories.length}`);
               console.log(`   - Methods: ${jsonData.methods.length}`);
-              console.log(`   - Methods with links: ${jsonData.methods.filter(m => m.link).length}`);
               console.log(`   - Output file: ${outputFile}`);
               console.log(`   - File size: ${(fs.statSync(outputFile).size / 1024).toFixed(2)} KB`);
-              
-              // Optional: Create a summary report
-              const summary = {
-                conversion_summary: {
-                  timestamp: new Date().toISOString(),
-                  source_file: csvFile,
-                  output_file: outputFile,
-                  categories_processed: jsonData.categories.length,
-                  methods_processed: jsonData.methods.length,
-                  methods_with_links: jsonData.methods.filter(m => m.link).length,
-                  categories: jsonData.categories.map(cat => ({
-                    id: cat.id,
-                    name: cat.name,
-                    options_count: cat.options.length
-                  }))
-                }
-              };
-              
-              fs.writeFileSync('conversion-summary.json', JSON.stringify(summary, null, 2));
-              console.log(`📋 Summary report created: conversion-summary.json`);
               
             } catch (error) {
               console.error(`❌ Error writing JSON file: ${error.message}`);
@@ -237,24 +198,31 @@ jobs:
     - name: Convert CSV to JSON
       run: |
         INPUT_FILE="${{ github.event.inputs.csv_file || 'methodologies.csv' }}"
-        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methodologies.json' }}"
         
-        echo "🔄 Converting $INPUT_FILE to $OUTPUT_FILE using csv-to-json.js"
-        echo "Using script: $([ "$SCRIPT_EXISTS" = "true" ] && echo "existing repository script" || echo "generated script")"
+        echo "🔄 Converting $INPUT_FILE to $OUTPUT_FILE"
         
         # Run the conversion
-        node csv-to-json.js "$INPUT_FILE" "$OUTPUT_FILE"
+        node convert-csv.js "$INPUT_FILE" "$OUTPUT_FILE"
         
     - name: Validate JSON output
       run: |
-        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methodologies.json' }}"
         
         if [ -f "$OUTPUT_FILE" ]; then
           echo "✅ JSON file created successfully"
           echo "File size: $(stat -c%s "$OUTPUT_FILE") bytes"
           
           # Validate JSON syntax
-          if node -e "const data = JSON.parse(require('fs').readFileSync('$OUTPUT_FILE', 'utf8')); console.log('✅ JSON syntax is valid'); console.log('Structure check:'); console.log('- Has categories:', Array.isArray(data.categories)); console.log('- Has methods:', Array.isArray(data.methods)); console.log('- Methods count:', data.methods.length); console.log('- Categories count:', data.categories.length);"; then
+          if node -e "
+            const data = JSON.parse(require('fs').readFileSync('$OUTPUT_FILE', 'utf8')); 
+            console.log('✅ JSON syntax is valid'); 
+            console.log('Structure check:'); 
+            console.log('- Has categories:', Array.isArray(data.categories)); 
+            console.log('- Has methods:', Array.isArray(data.methods)); 
+            console.log('- Methods count:', data.methods.length); 
+            console.log('- Categories count:', data.categories.length);
+          "; then
             echo "JSON validation passed"
           else
             echo "❌ JSON validation failed"
@@ -278,13 +246,16 @@ jobs:
           *.json
         retention-days: 30
         
-    - name: Commit JSON files (if on main branch)
+    - name: Configure Git
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
-        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+    - name: Commit JSON files (if on main branch)
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      run: |
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methodologies.json' }}"
         
         if [ -f "$OUTPUT_FILE" ]; then
           git add "$OUTPUT_FILE"
@@ -292,8 +263,8 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-update: Convert CSV to JSON using csv-to-json.js [skip ci]"
-            git push
+            git commit -m "Auto-update: Convert CSV to JSON [skip ci]"
+            git push origin main
             echo "✅ JSON files committed and pushed"
           fi
         fi
@@ -311,13 +282,12 @@ jobs:
           This PR contains automatically converted JSON files from CSV sources.
           
           ### Changes:
-          - Converted CSV methodologies data to structured JSON format using csv-to-json.js
-          - Added Link support for methodology references
+          - Converted CSV methodologies data to structured JSON format
           
           ### Files:
-          - `${{ github.event.inputs.output_file || 'methods_data.json' }}`
+          - `${{ github.event.inputs.output_file || 'methodologies.json' }}`
           
-          Generated by GitHub Actions workflow using csv-to-json.js script.
+          Generated by GitHub Actions workflow.
         branch: csv-to-json-auto-${{ github.run_number }}
         
     - name: Display summary
@@ -327,16 +297,13 @@ jobs:
         echo "📁 Files created:"
         ls -la *.json 2>/dev/null || echo "No JSON files found"
         echo ""
-        echo "🔧 Script used: existing csv-to-json.js from repository"
-        echo ""
-        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methodologies.json' }}"
         if [ -f "$OUTPUT_FILE" ]; then
           echo "📊 Final Statistics:"
           node -e "
             const data = JSON.parse(require('fs').readFileSync('$OUTPUT_FILE', 'utf8'));
             console.log('   - Categories:', data.categories.length);
             console.log('   - Methods:', data.methods.length);
-            console.log('   - Methods with links:', data.methods.filter(m => m.link).length);
             console.log('   - File size:', (require('fs').statSync('$OUTPUT_FILE').size / 1024).toFixed(2), 'KB');
           "
         fi
