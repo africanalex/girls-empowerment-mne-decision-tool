@@ -252,13 +252,13 @@ jobs:
         retention-days: 30
         
     - name: Configure Git
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
     - name: Commit JSON files (if on main branch)
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
       run: |
         OUTPUT_FILE="${{ github.event.inputs.output_file || 'methodologies.json' }}"
         
@@ -275,7 +275,7 @@ jobs:
         fi
         
     - name: Create Pull Request (if on feature branch)
-      if: github.ref != 'refs/heads/main' && github.event_name == 'push'
+      if: github.ref != 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
       uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
