@@ -1,0 +1,342 @@
+name: Convert CSV to JSON
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - '**/*.csv'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**/*.csv'
+  workflow_dispatch:
+    inputs:
+      csv_file:
+        description: 'Path to CSV file to convert'
+        required: false
+        default: 'methodologies.csv'
+      output_file:
+        description: 'Output JSON file name'
+        required: false
+        default: 'methodologies.json'
+
+jobs:
+  convert-csv-to-json:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        npm init -y
+        npm install csv-parser
+        
+    - name: Create conversion script
+      run: |
+        cat > convert-csv.js << 'EOF'
+        const fs = require('fs');
+        const csv = require('csv-parser');
+        const path = require('path');
+
+        // Get command line arguments
+        const csvFile = process.argv[2] || 'methodologies.csv';
+        const outputFile = process.argv[3] || 'methodologies.json';
+
+        console.log(`Converting ${csvFile} to ${outputFile}`);
+
+        const results = [];
+        const categories = new Map();
+
+        // Function to extract categories and their options from headers
+        function processHeaders(headers) {
+          const categoryMap = new Map();
+          
+          headers.forEach((header, index) => {
+            if (index === 0) return; // Skip method name column
+            
+            // Skip special columns that aren't category-option pairs
+            const headerLower = header.toLowerCase().trim();
+            if (headerLower === 'link' || headerLower === 'url' || headerLower === 'reference') {
+              return;
+            }
+            
+            // Match pattern "Category - Option"
+            const match = header.match(/^(.+?)\s*-\s*(.+)$/);
+            if (match) {
+              const categoryName = match[1].trim();
+              const optionName = match[2].trim();
+              const categoryId = categoryName.toLowerCase()
+                .replace(/\s+/g, '_')
+                .replace(/[^a-z0-9_]/g, '');
+              
+              if (!categoryMap.has(categoryId)) {
+                categoryMap.set(categoryId, {
+                  id: categoryId,
+                  name: categoryName,
+                  options: []
+                });
+              }
+              
+              const category = categoryMap.get(categoryId);
+              if (!category.options.includes(optionName)) {
+                category.options.push(optionName);
+              }
+            }
+          });
+          
+          return Array.from(categoryMap.values());
+        }
+
+        // Function to process a single method row
+        function processMethod(row, headers) {
+          const methodName = Object.values(row)[0];
+          if (!methodName || methodName.trim() === '') return null;
+          
+          const method = {
+            name: methodName.trim(),
+            description: `${methodName.trim()} methodology for adolescent girl empowerment research`,
+            attributes: {}
+          };
+          
+          // Process each column (skip first column which is method name)
+          headers.forEach((header, index) => {
+            if (index === 0) return;
+            
+            const value = Object.values(row)[index];
+            if (!value || value.trim() === '') return;
+            
+            // Handle special columns that aren't category-option pairs
+            const headerLower = header.toLowerCase().trim();
+            
+            // Handle Link column specially
+            if (headerLower === 'link' || headerLower === 'url' || headerLower === 'reference') {
+              const url = value.toString().trim();
+              // Basic URL validation
+              if (url && (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('www.'))) {
+                method.link = url.startsWith('www.') ? `https://${url}` : url;
+              }
+              return;
+            }
+            
+            // Handle category-option columns
+            const match = header.match(/^(.+?)\s*-\s*(.+)$/);
+            if (match) {
+              const categoryName = match[1].trim();
+              const optionName = match[2].trim();
+              const categoryId = categoryName.toLowerCase()
+                .replace(/\s+/g, '_')
+                .replace(/[^a-z0-9_]/g, '');
+              
+              // Initialize array for this category if it doesn't exist
+              if (!method.attributes[categoryId]) {
+                method.attributes[categoryId] = [];
+              }
+              
+              // Add the option if the value indicates true/yes (handles various boolean representations)
+              const truthyValues = ['true', 'yes', '1', 'x', 'TRUE', 'YES', 'X'];
+              if (truthyValues.includes(value.toString().trim())) {
+                if (!method.attributes[categoryId].includes(optionName)) {
+                  method.attributes[categoryId].push(optionName);
+                }
+              }
+            }
+          });
+          
+          return method;
+        }
+
+        // Check if CSV file exists
+        if (!fs.existsSync(csvFile)) {
+          console.error(`Error: CSV file '${csvFile}' not found`);
+          process.exit(1);
+        }
+
+        let headers = [];
+        let firstRow = true;
+
+        fs.createReadStream(csvFile)
+          .pipe(csv())
+          .on('headers', (headerList) => {
+            headers = headerList;
+            console.log(`Found ${headers.length} columns`);
+            
+            // Process categories from headers
+            const categoriesArray = processHeaders(headers);
+            categoriesArray.forEach(cat => categories.set(cat.id, cat));
+            console.log(`Identified ${categoriesArray.length} categories`);
+          })
+          .on('data', (row) => {
+            const method = processMethod(row, headers);
+            if (method) {
+              results.push(method);
+            }
+          })
+          .on('end', () => {
+            // Create final JSON structure
+            const jsonData = {
+              metadata: {
+                source: csvFile,
+                generated: new Date().toISOString(),
+                total_categories: categories.size,
+                total_methods: results.length
+              },
+              categories: Array.from(categories.values()),
+              methods: results
+            };
+            
+            try {
+              // Write JSON file
+              fs.writeFileSync(outputFile, JSON.stringify(jsonData, null, 2));
+              
+              console.log(`✅ Successfully converted CSV to JSON`);
+              console.log(`📊 Statistics:`);
+              console.log(`   - Categories: ${jsonData.categories.length}`);
+              console.log(`   - Methods: ${jsonData.methods.length}`);
+              console.log(`   - Methods with links: ${jsonData.methods.filter(m => m.link).length}`);
+              console.log(`   - Output file: ${outputFile}`);
+              console.log(`   - File size: ${(fs.statSync(outputFile).size / 1024).toFixed(2)} KB`);
+              
+              // Optional: Create a summary report
+              const summary = {
+                conversion_summary: {
+                  timestamp: new Date().toISOString(),
+                  source_file: csvFile,
+                  output_file: outputFile,
+                  categories_processed: jsonData.categories.length,
+                  methods_processed: jsonData.methods.length,
+                  methods_with_links: jsonData.methods.filter(m => m.link).length,
+                  categories: jsonData.categories.map(cat => ({
+                    id: cat.id,
+                    name: cat.name,
+                    options_count: cat.options.length
+                  }))
+                }
+              };
+              
+              fs.writeFileSync('conversion-summary.json', JSON.stringify(summary, null, 2));
+              console.log(`📋 Summary report created: conversion-summary.json`);
+              
+            } catch (error) {
+              console.error(`❌ Error writing JSON file: ${error.message}`);
+              process.exit(1);
+            }
+          })
+          .on('error', (error) => {
+            console.error(`❌ Error reading CSV file: ${error.message}`);
+            process.exit(1);
+          });
+        EOF
+        
+    - name: Convert CSV to JSON
+      run: |
+        INPUT_FILE="${{ github.event.inputs.csv_file || 'methodologies.csv' }}"
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+        
+        echo "🔄 Converting $INPUT_FILE to $OUTPUT_FILE using csv-to-json.js"
+        echo "Using script: $([ "$SCRIPT_EXISTS" = "true" ] && echo "existing repository script" || echo "generated script")"
+        
+        # Run the conversion
+        node csv-to-json.js "$INPUT_FILE" "$OUTPUT_FILE"
+        
+    - name: Validate JSON output
+      run: |
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+        
+        if [ -f "$OUTPUT_FILE" ]; then
+          echo "✅ JSON file created successfully"
+          echo "File size: $(stat -c%s "$OUTPUT_FILE") bytes"
+          
+          # Validate JSON syntax
+          if node -e "const data = JSON.parse(require('fs').readFileSync('$OUTPUT_FILE', 'utf8')); console.log('✅ JSON syntax is valid'); console.log('Structure check:'); console.log('- Has categories:', Array.isArray(data.categories)); console.log('- Has methods:', Array.isArray(data.methods)); console.log('- Methods count:', data.methods.length); console.log('- Categories count:', data.categories.length);"; then
+            echo "JSON validation passed"
+          else
+            echo "❌ JSON validation failed"
+            exit 1
+          fi
+          
+          # Display first few lines for verification
+          echo ""
+          echo "📋 First 20 lines of generated JSON:"
+          head -20 "$OUTPUT_FILE"
+        else
+          echo "❌ JSON file was not created"
+          exit 1
+        fi
+        
+    - name: Upload JSON artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: converted-json-files
+        path: |
+          *.json
+        retention-days: 30
+        
+    - name: Commit JSON files (if on main branch)
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+        
+        if [ -f "$OUTPUT_FILE" ]; then
+          git add "$OUTPUT_FILE"
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update: Convert CSV to JSON using csv-to-json.js [skip ci]"
+            git push
+            echo "✅ JSON files committed and pushed"
+          fi
+        fi
+        
+    - name: Create Pull Request (if on feature branch)
+      if: github.ref != 'refs/heads/main' && github.event_name == 'push'
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Convert CSV to JSON format"
+        title: "Auto-generated: CSV to JSON conversion"
+        body: |
+          ## CSV to JSON Conversion
+          
+          This PR contains automatically converted JSON files from CSV sources.
+          
+          ### Changes:
+          - Converted CSV methodologies data to structured JSON format using csv-to-json.js
+          - Added Link support for methodology references
+          
+          ### Files:
+          - `${{ github.event.inputs.output_file || 'methods_data.json' }}`
+          
+          Generated by GitHub Actions workflow using csv-to-json.js script.
+        branch: csv-to-json-auto-${{ github.run_number }}
+        
+    - name: Display summary
+      run: |
+        echo "🎉 CSV to JSON conversion completed!"
+        echo ""
+        echo "📁 Files created:"
+        ls -la *.json 2>/dev/null || echo "No JSON files found"
+        echo ""
+        echo "🔧 Script used: existing csv-to-json.js from repository"
+        echo ""
+        OUTPUT_FILE="${{ github.event.inputs.output_file || 'methods_data.json' }}"
+        if [ -f "$OUTPUT_FILE" ]; then
+          echo "📊 Final Statistics:"
+          node -e "
+            const data = JSON.parse(require('fs').readFileSync('$OUTPUT_FILE', 'utf8'));
+            console.log('   - Categories:', data.categories.length);
+            console.log('   - Methods:', data.methods.length);
+            console.log('   - Methods with links:', data.methods.filter(m => m.link).length);
+            console.log('   - File size:', (require('fs').statSync('$OUTPUT_FILE').size / 1024).toFixed(2), 'KB');
+          "
+        fi
