@@ -141,19 +141,19 @@ function groupCategoriesByTheme() {
           categories: [state.categories.find(cat => cat.id === "sem_level")]
       },
       {
-          name: "Context",
+          name: "Context of the Project Operating Environment",
           categories: [
-              state.categories.find(cat => cat.id === "feasibility"),
-              state.categories.find(cat => cat.id === "cultural_permissiveness_required"),
-              state.categories.find(cat => cat.id === "political_sensitivity")
+              state.categories.find(cat => cat.id === "level_of_political_stability"),
+              state.categories.find(cat => cat.id === "level_of_cultural_permissiveness"),
+              state.categories.find(cat => cat.id === "political_sensitivity_regarding_empowerment_of_adolescent_girls"),
+              state.categories.find(cat => cat.id === "participant_access_to_technology")
           ]
       },
       {
-          name: "Resources",
+          name: "Project Resources",
           categories: [
-              state.categories.find(cat => cat.id === "resource_requirement"),
-              state.categories.find(cat => cat.id === "human_resource_skills"),
-              state.categories.find(cat => cat.id === "technological_access_required")
+              state.categories.find(cat => cat.id === "financial_resource"),
+              state.categories.find(cat => cat.id === "human_resource_skills")
           ]
       }
       // {
