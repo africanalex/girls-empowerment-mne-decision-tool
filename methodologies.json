@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source": "methodologies.csv",
-    "generated": "2025-07-04T08:38:39.092Z",
+    "generated": "2025-07-04T08:45:02.468Z",
     "total_categories": 14,
-    "total_methods": 34
+    "total_methods": 28
   },
   "categories": [
     {
@@ -137,8 +137,8 @@
   ],
   "methods": [
     {
-      "name": "Quantitative Digital Surveys for Measuring Adolescent Girls Empowerment",
-      "description": "Quantitative Digital Surveys for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
+      "name": "Quantitative Surveys (Digital/Online)",
+      "description": "Quantitative Surveys (Digital/Online) methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -189,8 +189,8 @@
       }
     },
     {
-      "name": "Free-form Artistic Expression (Drawing) for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Free-form Artistic Expression (Drawing) for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Free-form Artistic Expression",
+      "description": "Free-form Artistic Expression methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -241,8 +241,8 @@
       }
     },
     {
-      "name": "Institutional Ethnography for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Institutional Ethnography for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Institutional Ethnography",
+      "description": "Institutional Ethnography methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -292,8 +292,8 @@
       }
     },
     {
-      "name": "Gender-Responsive Budget Audits for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Gender-Responsive Budget Audits for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Gender-Responsive Budget Audits",
+      "description": "Gender-Responsive Budget Audits methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Community",
@@ -342,8 +342,8 @@
       }
     },
     {
-      "name": "Mixed Methods Approaches for Measuring Adolescent Girls Empowerment",
-      "description": "Mixed Methods Approaches for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
+      "name": "Mixed Methods Approaches",
+      "description": "Mixed Methods Approaches methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -395,8 +395,8 @@
       }
     },
     {
-      "name": "Photovoice for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Photovoice for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Photovoice",
+      "description": "Photovoice methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -447,59 +447,8 @@
       }
     },
     {
-      "name": "Quantitative Survey Cluster Randomized Controlled Trial for Measuring Adolescent Girls Empowerment",
-      "description": "Quantitative Survey Cluster Randomized Controlled Trial for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
-      "attributes": {
-        "sem_level": [
-          "Individual",
-          "Interpersonal",
-          "Community"
-        ],
-        "level_of_political_stability": [
-          "Stable",
-          "Fragile"
-        ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
-        ],
-        "financial_resource": [
-          "Medium"
-        ],
-        "human_resource_skills": [
-          "Medium"
-        ],
-        "participant_access_to_technology": [
-          "Medium"
-        ],
-        "political_sensitivity": [
-          "Medium"
-        ],
-        "participation": [
-          "Not participatory"
-        ],
-        "validity": [
-          "High"
-        ],
-        "reliability": [
-          "High"
-        ],
-        "gender": [
-          "transformative Potential - Medium"
-        ],
-        "inclusivity_of_marginalised_girls": [
-          "Medium"
-        ],
-        "value_for_money": [
-          "Medium"
-        ],
-        "potential_for_behavioural_insight_integration": [
-          "Medium"
-        ]
-      }
-    },
-    {
-      "name": "Participatory Video for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Participatory Video for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Participatory Video",
+      "description": "Participatory Video methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -550,60 +499,8 @@
       }
     },
     {
-      "name": "Relational Mapping for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Relational Mapping for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
-      "attributes": {
-        "sem_level": [
-          "Individual",
-          "Interpersonal",
-          "Community"
-        ],
-        "level_of_political_stability": [
-          "Stable",
-          "Fragile",
-          "Conflict-affected"
-        ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
-        ],
-        "financial_resource": [
-          "Low"
-        ],
-        "human_resource_skills": [
-          "Medium"
-        ],
-        "participant_access_to_technology": [
-          "Low"
-        ],
-        "political_sensitivity": [
-          "Medium"
-        ],
-        "participation": [
-          "Potentially participatory"
-        ],
-        "validity": [
-          "Medium"
-        ],
-        "reliability": [
-          "Medium"
-        ],
-        "gender": [
-          "transformative Potential - Medium"
-        ],
-        "inclusivity_of_marginalised_girls": [
-          "Medium"
-        ],
-        "value_for_money": [
-          "High"
-        ],
-        "potential_for_behavioural_insight_integration": [
-          "High"
-        ]
-      }
-    },
-    {
-      "name": "Drawing-Based Participatory Mapping for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Drawing-Based Participatory Mapping for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Participatory Mapping (Geographical)",
+      "description": "Participatory Mapping (Geographical) methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -653,60 +550,8 @@
       }
     },
     {
-      "name": "Mixed-Methods Empowerment Program for Measuring Adolescent Girls Empowerment",
-      "description": "Mixed-Methods Empowerment Program for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
-      "attributes": {
-        "sem_level": [
-          "Individual",
-          "Interpersonal",
-          "Community"
-        ],
-        "level_of_political_stability": [
-          "Stable",
-          "Fragile",
-          "Conflict-affected"
-        ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
-        ],
-        "financial_resource": [
-          "Medium"
-        ],
-        "human_resource_skills": [
-          "Medium"
-        ],
-        "participant_access_to_technology": [
-          "Medium"
-        ],
-        "political_sensitivity": [
-          "Medium"
-        ],
-        "participation": [
-          "Potentially participatory"
-        ],
-        "validity": [
-          "High"
-        ],
-        "reliability": [
-          "Medium"
-        ],
-        "gender": [
-          "transformative Potential - High"
-        ],
-        "inclusivity_of_marginalised_girls": [
-          "Medium"
-        ],
-        "value_for_money": [
-          "Medium"
-        ],
-        "potential_for_behavioural_insight_integration": [
-          "High"
-        ]
-      }
-    },
-    {
-      "name": "One-on-One Mentoring Structured Methods",
-      "description": "One-on-One Mentoring Structured Methods methodology for adolescent girl empowerment research",
+      "name": "One-on-One Mentoring",
+      "description": "One-on-One Mentoring methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -809,8 +654,8 @@
       }
     },
     {
-      "name": "Storytelling Circles for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Storytelling Circles for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Storytelling Circles",
+      "description": "Storytelling Circles methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -860,8 +705,8 @@
       }
     },
     {
-      "name": "Quantitative Social Network Analysis for Measuring Adolescent Girls Empowerment",
-      "description": "Quantitative Social Network Analysis for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
+      "name": "Quantitative Social Network Analysis",
+      "description": "Quantitative Social Network Analysis methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Interpersonal",
@@ -911,8 +756,8 @@
       }
     },
     {
-      "name": "Digital Storytelling for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Digital Storytelling for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Digital Storytelling",
+      "description": "Digital Storytelling methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1015,8 +860,8 @@
       }
     },
     {
-      "name": "Most Significant Change for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Most Significant Change for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Most Significant Change",
+      "description": "Most Significant Change methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1067,61 +912,8 @@
       }
     },
     {
-      "name": "Mixed-Methods Longitudinal Transition-Focused Program for Measuring Adolescent Girls Empowerment",
-      "description": "Mixed-Methods Longitudinal Transition-Focused Program for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
-      "attributes": {
-        "sem_level": [
-          "Individual",
-          "Interpersonal",
-          "Community",
-          "Institutional"
-        ],
-        "level_of_political_stability": [
-          "Stable",
-          "Fragile",
-          "Conflict-affected"
-        ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
-        ],
-        "financial_resource": [
-          "High"
-        ],
-        "human_resource_skills": [
-          "High"
-        ],
-        "participant_access_to_technology": [
-          "Low"
-        ],
-        "political_sensitivity": [
-          "Medium"
-        ],
-        "participation": [
-          "Potentially participatory"
-        ],
-        "validity": [
-          "Medium"
-        ],
-        "reliability": [
-          "Medium"
-        ],
-        "gender": [
-          "transformative Potential - High"
-        ],
-        "inclusivity_of_marginalised_girls": [
-          "Medium"
-        ],
-        "value_for_money": [
-          "Medium"
-        ],
-        "potential_for_behavioural_insight_integration": [
-          "High"
-        ]
-      }
-    },
-    {
-      "name": "Body Mapping for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Body Mapping for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Body Mapping",
+      "description": "Body Mapping methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1171,8 +963,8 @@
       }
     },
     {
-      "name": "In-Depth Interviews Ad Hoc",
-      "description": "In-Depth Interviews Ad Hoc methodology for adolescent girl empowerment research",
+      "name": "In-Depth Interviews (Ad Hoc)",
+      "description": "In-Depth Interviews (Ad Hoc) methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1222,8 +1014,8 @@
       }
     },
     {
-      "name": "Quantitative Latent Class Analysis for Measuring Adolescent Girls Empowerment",
-      "description": "Quantitative Latent Class Analysis for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
+      "name": "Latent Class Analysis",
+      "description": "Latent Class Analysis methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1274,8 +1066,8 @@
       }
     },
     {
-      "name": "Institutional Journey Mapping for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Institutional Journey Mapping for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Institutional Journey Mapping",
+      "description": "Institutional Journey Mapping methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1326,58 +1118,8 @@
       }
     },
     {
-      "name": "In-Depth Interviews Longitudinal",
-      "description": "In-Depth Interviews Longitudinal methodology for adolescent girl empowerment research",
-      "attributes": {
-        "sem_level": [
-          "Individual",
-          "Interpersonal"
-        ],
-        "level_of_political_stability": [
-          "Stable",
-          "Fragile"
-        ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
-        ],
-        "financial_resource": [
-          "High"
-        ],
-        "human_resource_skills": [
-          "High"
-        ],
-        "participant_access_to_technology": [
-          "Low"
-        ],
-        "political_sensitivity": [
-          "Medium"
-        ],
-        "participation": [
-          "Potentially participatory"
-        ],
-        "validity": [
-          "Medium"
-        ],
-        "reliability": [
-          "Medium"
-        ],
-        "gender": [
-          "transformative Potential - High"
-        ],
-        "inclusivity_of_marginalised_girls": [
-          "Medium"
-        ],
-        "value_for_money": [
-          "Medium"
-        ],
-        "potential_for_behavioural_insight_integration": [
-          "High"
-        ]
-      }
-    },
-    {
-      "name": "Life History Narratives for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Life History Narratives for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Life History Narratives",
+      "description": "Life History Narratives methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1427,8 +1169,8 @@
       }
     },
     {
-      "name": "Quantitative Scale Validation for Measuring Adolescent Girls Agency",
-      "description": "Quantitative Scale Validation for Measuring Adolescent Girls Agency methodology for adolescent girl empowerment research",
+      "name": "Quantitative Scales (Validated)",
+      "description": "Quantitative Scales (Validated) methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1479,8 +1221,8 @@
       }
     },
     {
-      "name": "Critical Incident Techniques for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Critical Incident Techniques for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Critical Incident Techniques",
+      "description": "Critical Incident Techniques methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1530,8 +1272,8 @@
       }
     },
     {
-      "name": "Participatory Sociograms for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Participatory Sociograms for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Participatory Sociograms  (Qualitative Social Network Analysis)",
+      "description": "Participatory Sociograms  (Qualitative Social Network Analysis) methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1582,60 +1324,8 @@
       }
     },
     {
-      "name": "Youth Policy Dialogues for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Youth Policy Dialogues for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
-      "attributes": {
-        "sem_level": [
-          "Individual",
-          "Interpersonal",
-          "Community",
-          "Institutional"
-        ],
-        "level_of_political_stability": [
-          "Stable",
-          "Fragile"
-        ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
-        ],
-        "financial_resource": [
-          "Medium"
-        ],
-        "human_resource_skills": [
-          "Medium"
-        ],
-        "participant_access_to_technology": [
-          "Low"
-        ],
-        "political_sensitivity": [
-          "Medium"
-        ],
-        "participation": [
-          "Inherently participatory"
-        ],
-        "validity": [
-          "Medium"
-        ],
-        "reliability": [
-          "Medium"
-        ],
-        "gender": [
-          "transformative Potential - High"
-        ],
-        "inclusivity_of_marginalised_girls": [
-          "Medium"
-        ],
-        "value_for_money": [
-          "Medium"
-        ],
-        "potential_for_behavioural_insight_integration": [
-          "Medium"
-        ]
-      }
-    },
-    {
-      "name": "Quantitative Scale Cross-sectional Survey for Measuring Adolescent Girls Empowerment",
-      "description": "Quantitative Scale Cross-sectional Survey for Measuring Adolescent Girls Empowerment methodology for adolescent girl empowerment research",
+      "name": "Cross-sectional Survey",
+      "description": "Cross-sectional Survey methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1686,8 +1376,8 @@
       }
     },
     {
-      "name": "Service Journey Mapping for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Service Journey Mapping for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Service Journey Mapping",
+      "description": "Service Journey Mapping methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
@@ -1738,8 +1428,8 @@
       }
     },
     {
-      "name": "Social Network Analysis for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Social Network Analysis for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Social Network Analysis",
+      "description": "Social Network Analysis methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Interpersonal",
@@ -1789,8 +1479,8 @@
       }
     },
     {
-      "name": "Focus Group Discussions for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Focus Group Discussions for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Focus Group Discussions",
+      "description": "Focus Group Discussions methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Interpersonal",
@@ -1840,8 +1530,8 @@
       }
     },
     {
-      "name": "Intergenerational Dialogues for Measuring Adolescent Girls Empowerment Outcomes",
-      "description": "Intergenerational Dialogues for Measuring Adolescent Girls Empowerment Outcomes methodology for adolescent girl empowerment research",
+      "name": "Intergenerational Dialogues",
+      "description": "Intergenerational Dialogues methodology for adolescent girl empowerment research",
       "attributes": {
         "sem_level": [
           "Individual",
