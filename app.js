@@ -137,7 +137,7 @@ function groupCategoriesByTheme() {
   // You can customize this grouping based on your needs
   return [
       {
-          name: "SEM Level",
+          name: "Socio-Ecological Model Level",
           categories: [state.categories.find(cat => cat.id === "sem_level")]
       },
       {
