@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "methodologies.csv",
-    "generated": "2025-06-25T08:12:45.672Z",
+    "generated": "2025-07-04T08:38:39.092Z",
     "total_categories": 14,
     "total_methods": 34
   },
@@ -17,8 +17,8 @@
       ]
     },
     {
-      "id": "feasibility",
-      "name": "Feasibility",
+      "id": "level_of_political_stability",
+      "name": "Level of Political Stability",
       "options": [
         "Stable",
         "Fragile",
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "id": "cultural_permissiveness_required",
-      "name": "Cultural Permissiveness Required",
+      "id": "level_of_cultural_permissiveness_required",
+      "name": "Level of Cultural Permissiveness Required",
       "options": [
         "Low",
         "Medium",
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "id": "resource_requirement",
-      "name": "Resource Requirement",
+      "id": "financial_resource",
+      "name": "Financial Resource",
       "options": [
         "High",
         "Medium",
@@ -54,8 +54,8 @@
       ]
     },
     {
-      "id": "technological_access_required",
-      "name": "Technological Access Required",
+      "id": "participant_access_to_technology",
+      "name": "Participant Access to Technology",
       "options": [
         "High",
         "Medium",
@@ -126,8 +126,8 @@
       ]
     },
     {
-      "id": "behavioural_insight_integration",
-      "name": "Behavioural Insight Integration",
+      "id": "potential_for_behavioural_insight_integration",
+      "name": "Potential for Behavioural Insight Integration",
       "options": [
         "High",
         "Medium",
@@ -145,20 +145,20 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "High",
           "Medium"
         ],
@@ -183,7 +183,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -197,21 +197,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Varies"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Low"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -235,7 +235,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -250,19 +250,19 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -286,7 +286,7 @@
         "value_for_money": [
           "Low"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -299,20 +299,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Medium"
         ],
         "political_sensitivity": [
@@ -336,7 +336,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -351,21 +351,21 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Medium"
         ],
         "political_sensitivity": [
@@ -389,7 +389,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -404,20 +404,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Varies"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Medium"
         ],
         "political_sensitivity": [
@@ -441,7 +441,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -455,20 +455,20 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Medium"
         ],
         "political_sensitivity": [
@@ -492,7 +492,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -507,20 +507,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Varies"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Medium"
         ],
         "political_sensitivity": [
@@ -544,7 +544,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -558,21 +558,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Low"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -596,7 +596,7 @@
         "value_for_money": [
           "High"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -610,20 +610,20 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Varies"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Low"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -647,7 +647,7 @@
         "value_for_money": [
           "High"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -661,21 +661,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Medium"
         ],
         "political_sensitivity": [
@@ -699,7 +699,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -713,21 +713,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -751,7 +751,7 @@
         "value_for_money": [
           "Low"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -765,21 +765,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Low"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "High"
         ],
         "political_sensitivity": [
@@ -803,7 +803,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -817,20 +817,20 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -854,7 +854,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -867,21 +867,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "High"
         ],
         "political_sensitivity": [
@@ -905,7 +905,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -920,20 +920,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Varies"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "High"
         ],
         "political_sensitivity": [
@@ -957,7 +957,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -971,21 +971,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Low"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1009,7 +1009,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1023,21 +1023,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1061,7 +1061,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1076,21 +1076,21 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1114,7 +1114,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1128,20 +1128,20 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Varies"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1165,7 +1165,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1178,21 +1178,21 @@
           "Individual",
           "Interpersonal"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1216,7 +1216,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -1230,21 +1230,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1268,7 +1268,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1283,20 +1283,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1320,7 +1320,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1333,20 +1333,20 @@
           "Individual",
           "Interpersonal"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1370,7 +1370,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1384,20 +1384,20 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Varies"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1421,7 +1421,7 @@
         "value_for_money": [
           "Low"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1435,21 +1435,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Low"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Low"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1473,7 +1473,7 @@
         "value_for_money": [
           "High"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -1487,20 +1487,20 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1524,7 +1524,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1538,21 +1538,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1576,7 +1576,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1591,20 +1591,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1628,7 +1628,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -1642,21 +1642,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1680,7 +1680,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -1695,20 +1695,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "High"
         ],
         "human_resource_skills": [
           "High"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1732,7 +1732,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1745,21 +1745,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "High"
         ],
         "political_sensitivity": [
@@ -1783,7 +1783,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "High"
         ]
       }
@@ -1796,21 +1796,21 @@
           "Interpersonal",
           "Community"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile",
           "Conflict-affected"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1834,7 +1834,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
@@ -1849,20 +1849,20 @@
           "Community",
           "Institutional"
         ],
-        "feasibility": [
+        "level_of_political_stability": [
           "Stable",
           "Fragile"
         ],
-        "cultural_permissiveness_required": [
+        "level_of_cultural_permissiveness_required": [
           "Medium"
         ],
-        "resource_requirement": [
+        "financial_resource": [
           "Medium"
         ],
         "human_resource_skills": [
           "Medium"
         ],
-        "technological_access_required": [
+        "participant_access_to_technology": [
           "Low"
         ],
         "political_sensitivity": [
@@ -1886,7 +1886,7 @@
         "value_for_money": [
           "Medium"
         ],
-        "behavioural_insight_integration": [
+        "potential_for_behavioural_insight_integration": [
           "Medium"
         ]
       }
