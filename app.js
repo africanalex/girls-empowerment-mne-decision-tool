@@ -8,7 +8,7 @@ let state = {
 
 // Define hierarchical categories with specific logic
 const HIERARCHICAL_CATEGORIES = [
-  'level_of_cultural_permissiveness',
+  'level_of_cultural_permissiveness_required',
   'political_sensitivity_regarding_empowerment_of_adolescent_girls',
   'participant_access_to_technology',
   'financial_resource',
@@ -204,7 +204,7 @@ function groupCategoriesByTheme() {
           name: "Context of the Project Operating Environment",
           categories: [
               state.categories.find(cat => cat.id === "level_of_political_stability"),
-              state.categories.find(cat => cat.id === "level_of_cultural_permissiveness"),
+              state.categories.find(cat => cat.id === "level_of_cultural_permissiveness_required"),
               state.categories.find(cat => cat.id === "political_sensitivity_regarding_empowerment_of_adolescent_girls"),
               state.categories.find(cat => cat.id === "participant_access_to_technology")
           ]
