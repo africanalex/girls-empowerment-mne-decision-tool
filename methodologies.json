@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source": "methodologies.csv",
-    "generated": "2025-07-04T09:12:46.855Z",
+    "generated": "2025-07-08T14:50:08.414Z",
     "total_categories": 14,
-    "total_methods": 28
+    "total_methods": 39
   },
   "categories": [
     {
@@ -17,27 +17,26 @@
       ]
     },
     {
-      "id": "level_of_political_stability",
-      "name": "Level of Political Stability",
+      "id": "political_stability",
+      "name": "Political Stability",
       "options": [
         "Stable",
         "Fragile",
-        "Conflict-affected"
+        "Conflict Affected"
       ]
     },
     {
-      "id": "level_of_cultural_permissiveness_required",
-      "name": "Level of Cultural Permissiveness Required",
+      "id": "cultural_permissiveness",
+      "name": "Cultural Permissiveness",
       "options": [
         "Low",
         "Medium",
-        "High",
-        "Varies"
+        "High"
       ]
     },
     {
-      "id": "financial_resource",
-      "name": "Financial Resource",
+      "id": "financial_resources_available",
+      "name": "Financial Resources Available",
       "options": [
         "High",
         "Medium",
@@ -45,8 +44,8 @@
       ]
     },
     {
-      "id": "human_resource_skills",
-      "name": "Human Resource Skills",
+      "id": "human_resource_skills_available",
+      "name": "Human Resource Skills Available",
       "options": [
         "High",
         "Medium",
@@ -63,8 +62,8 @@
       ]
     },
     {
-      "id": "political_sensitivity_regarding_empowerment_of_adolescent_girls",
-      "name": "Political Sensitivity Regarding Empowerment of Adolescent Girls",
+      "id": "political_sensitivity",
+      "name": "Political Sensitivity",
       "options": [
         "High",
         "Medium",
@@ -99,17 +98,17 @@
       ]
     },
     {
-      "id": "gender",
-      "name": "Gender",
+      "id": "gender_transformative_potential",
+      "name": "Gender Transformative Potential",
       "options": [
-        "transformative Potential - High",
-        "transformative Potential - Medium",
-        "transformative Potential - Low"
+        "High",
+        "Medium",
+        "Low"
       ]
     },
     {
-      "id": "inclusivity_of_marginalised_girls",
-      "name": "Inclusivity of Marginalised Girls",
+      "id": "potential_for_inclusion_of_marginalised_girls",
+      "name": "Potential for Inclusion of Marginalised Girls",
       "options": [
         "High",
         "Medium",
@@ -145,24 +144,25 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "High",
           "Medium"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -174,10 +174,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -197,24 +197,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Varies"
-        ],
-        "financial_resource": [
+        "cultural_permissiveness": [
           "Low"
         ],
-        "human_resource_skills": [
+        "financial_resources_available": [
+          "Low"
+        ],
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -226,10 +226,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "High"
         ],
         "value_for_money": [
@@ -250,22 +250,22 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
+        "cultural_permissiveness": [
+          "Low"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "High"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "High"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -277,10 +277,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -299,23 +299,23 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
+        "cultural_permissiveness": [
+          "Low"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "High"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "High"
         ],
         "participant_access_to_technology": [
           "Medium"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -327,10 +327,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -351,24 +351,25 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Medium"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -380,10 +381,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -404,23 +405,23 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Varies"
+        "cultural_permissiveness": [
+          "Low"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Medium"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -432,10 +433,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -456,23 +457,23 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Varies"
+        "cultural_permissiveness": [
+          "Low"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Medium"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -484,10 +485,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -507,23 +508,23 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Varies"
-        ],
-        "financial_resource": [
+        "cultural_permissiveness": [
           "Low"
         ],
-        "human_resource_skills": [
+        "financial_resources_available": [
+          "Low"
+        ],
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -535,10 +536,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "High"
         ],
         "value_for_money": [
@@ -558,24 +559,25 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "High"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -587,10 +589,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -610,24 +612,26 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Low"
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "High"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -639,10 +643,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -662,23 +666,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -690,10 +695,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -712,24 +717,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low"
+        ],
+        "financial_resources_available": [
           "Medium"
         ],
-        "financial_resource": [
-          "Medium"
-        ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "High"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -741,10 +746,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -765,23 +770,24 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Varies"
+        "cultural_permissiveness": [
+          "Low",
+          "High"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "High"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -793,10 +799,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -816,24 +822,25 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Low"
+        "cultural_permissiveness": [
+          "Low",
+          "High"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -845,10 +852,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Low"
         ],
         "value_for_money": [
@@ -868,24 +875,25 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -897,10 +905,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "High"
         ],
         "value_for_money": [
@@ -920,23 +928,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Varies"
-        ],
-        "financial_resource": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "human_resource_skills": [
+        "financial_resources_available": [
+          "Medium"
+        ],
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -948,10 +957,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -970,24 +979,25 @@
           "Individual",
           "Interpersonal"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -999,10 +1009,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1022,24 +1032,25 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "High"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "High"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1051,10 +1062,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1075,23 +1086,23 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Medium"
+        "cultural_permissiveness": [
+          "Low"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "High"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "High"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1103,10 +1114,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1126,23 +1137,23 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
-          "Varies"
+        "cultural_permissiveness": [
+          "Low"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "High"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "High"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1154,10 +1165,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1177,24 +1188,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
           "Low"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Low"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Low"
         ],
         "participation": [
@@ -1206,10 +1217,10 @@
         "reliability": [
           "High"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1229,23 +1240,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1257,10 +1269,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1280,24 +1292,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low"
+        ],
+        "financial_resources_available": [
           "Medium"
         ],
-        "financial_resource": [
-          "Medium"
-        ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1309,10 +1321,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1332,24 +1344,24 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low"
+        ],
+        "financial_resources_available": [
           "Medium"
         ],
-        "financial_resource": [
-          "Medium"
-        ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1361,10 +1373,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1385,23 +1397,24 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "High"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "High"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1413,10 +1426,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1435,24 +1448,25 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "High"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1464,10 +1478,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - Medium"
+        "gender_transformative_potential": [
+          "Medium"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1486,24 +1500,26 @@
           "Interpersonal",
           "Community"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile",
-          "Conflict-affected"
+          "Conflict Affected"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
           "Medium"
         ],
-        "financial_resource": [
-          "Medium"
-        ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1515,10 +1531,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1539,23 +1555,24 @@
           "Community",
           "Institutional"
         ],
-        "level_of_political_stability": [
+        "political_stability": [
           "Stable",
           "Fragile"
         ],
-        "level_of_cultural_permissiveness_required": [
+        "cultural_permissiveness": [
+          "Low",
           "Medium"
         ],
-        "financial_resource": [
+        "financial_resources_available": [
           "Medium"
         ],
-        "human_resource_skills": [
+        "human_resource_skills_available": [
           "Medium"
         ],
         "participant_access_to_technology": [
           "Low"
         ],
-        "political_sensitivity_regarding_empowerment_of_adolescent_girls": [
+        "political_sensitivity": [
           "Medium"
         ],
         "participation": [
@@ -1567,10 +1584,10 @@
         "reliability": [
           "Medium"
         ],
-        "gender": [
-          "transformative Potential - High"
+        "gender_transformative_potential": [
+          "High"
         ],
-        "inclusivity_of_marginalised_girls": [
+        "potential_for_inclusion_of_marginalised_girls": [
           "Medium"
         ],
         "value_for_money": [
@@ -1578,6 +1595,224 @@
         ],
         "potential_for_behavioural_insight_integration": [
           "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Individual Surveys with Girls (in-person)",
+      "description": "Individual Surveys with Girls (in-person) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Household Surveys (in-person)",
+      "description": "Household Surveys (in-person) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Administrative Data",
+      "description": "Administrative Data methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Real-Time Polling",
+      "description": "Real-Time Polling methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Indices and Composite Measures",
+      "description": "Indices and Composite Measures methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Quantitative Content Analysis",
+      "description": "Quantitative Content Analysis methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Community Resource Mapping/Audits",
+      "description": "Community Resource Mapping/Audits methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Policy Implementation Tracking",
+      "description": "Policy Implementation Tracking methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Outcome Mapping",
+      "description": "Outcome Mapping methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Outcome Harvesting",
+      "description": "Outcome Harvesting methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Social Listening/Digital Traces",
+      "description": "Social Listening/Digital Traces methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
         ]
       }
     }
