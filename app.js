@@ -6,66 +6,6 @@ let state = {
   filteredMethods: []
 };
 
-// Define hierarchical categories with specific logic
-const HIERARCHICAL_CATEGORIES = [
-  'level_of_cultural_permissiveness_required',
-  'political_sensitivity_regarding_empowerment_of_adolescent_girls',
-  'participant_access_to_technology',
-  'financial_resource',
-  'human_resource_skills'
-];
-
-// Special category with custom hierarchy
-const POLITICAL_STABILITY_CATEGORY = 'level_of_political_stability';
-
-// Function to get hierarchical values for a selection
-function getHierarchicalValues(category, selectedValues) {
-  // Handle political stability with custom hierarchy
-  if (category === POLITICAL_STABILITY_CATEGORY) {
-    const expandedValues = new Set();
-    
-    selectedValues.forEach(value => {
-      if (value === 'Conflict-affected') {
-        expandedValues.add('Conflict-affected');
-        expandedValues.add('Fragile');
-        expandedValues.add('Stable');
-      } else if (value === 'Fragile') {
-        expandedValues.add('Fragile');
-        expandedValues.add('Stable');
-      } else if (value === 'Stable') {
-        expandedValues.add('Stable');
-      } else {
-        expandedValues.add(value);
-      }
-    });
-    
-    return Array.from(expandedValues);
-  }
-  
-  // Handle standard hierarchical categories (Low/Medium/High)
-  if (!HIERARCHICAL_CATEGORIES.includes(category)) {
-    return selectedValues; // Return as-is for non-hierarchical categories
-  }
-  
-  const hierarchy = ['Low', 'Medium', 'High'];
-  const expandedValues = new Set();
-  
-  selectedValues.forEach(value => {
-    const valueIndex = hierarchy.indexOf(value);
-    if (valueIndex !== -1) {
-      // Add the selected value and all lower values
-      for (let i = 0; i <= valueIndex; i++) {
-        expandedValues.add(hierarchy[i]);
-      }
-    } else {
-      // For non-hierarchical values within hierarchical categories, add as-is
-      expandedValues.add(value);
-    }
-  });
-  
-  return Array.from(expandedValues);
-}
-
 // Initialize the application when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   loadMethodsData();
@@ -235,20 +175,10 @@ function updateStepContent(stepNumber, group) {
   group.categories.forEach(category => {
       const categorySection = document.createElement('div');
       categorySection.className = 'category-section';
-      
-      // Add hierarchical indicator if applicable
-      const isHierarchical = HIERARCHICAL_CATEGORIES.includes(category.id) || category.id === POLITICAL_STABILITY_CATEGORY;
-      let hierarchicalIndicator = '';
-      
-      if (category.id === POLITICAL_STABILITY_CATEGORY) {
-        hierarchicalIndicator = '<span class="hierarchical-indicator" title="Conflict-affected includes Fragile and Stable; Fragile includes Stable">🏛️ Hierarchical</span>';
-      } else if (isHierarchical) {
-        hierarchicalIndicator = '<span class="hierarchical-indicator" title="Selecting High includes Medium and Low">📊 Hierarchical</span>';
-      }
-      
+
       categorySection.innerHTML = `
           <div class="category-header">
-            <h3>${category.name} ${hierarchicalIndicator}</h3>
+            <h3>${category.name}</h3>
             <button class="select-all-btn" data-category-id="${category.id}">Select All</button>
           </div>
           <div class="checkbox-grid" data-category-id="${category.id}"></div>
@@ -346,20 +276,10 @@ function createStepContent(stepNumber, group) {
   group.categories.forEach(category => {
       const categorySection = document.createElement('div');
       categorySection.className = 'category-section';
-      
-      // Add hierarchical indicator if applicable
-      const isHierarchical = HIERARCHICAL_CATEGORIES.includes(category.id) || category.id === POLITICAL_STABILITY_CATEGORY;
-      let hierarchicalIndicator = '';
-      
-      if (category.id === POLITICAL_STABILITY_CATEGORY) {
-        hierarchicalIndicator = '<span class="hierarchical-indicator" title="Conflict-affected includes Fragile and Stable; Fragile includes Stable">🏛️ Hierarchical</span>';
-      } else if (isHierarchical) {
-        hierarchicalIndicator = '<span class="hierarchical-indicator" title="Selecting High includes Medium and Low">📊 Hierarchical</span>';
-      }
-      
+
       categorySection.innerHTML = `
           <div class="category-header">
-              <h3>${category.name} ${hierarchicalIndicator}</h3>
+              <h3>${category.name}</h3>
               <button class="select-all-btn" data-category-id="${category.id}">Select All</button>
           </div>
           <div class="checkbox-grid" data-category-id="${category.id}"></div>
@@ -567,7 +487,6 @@ function handleCheckboxChange(event) {
   updateSelectAllButtonState(category);
 }
 
-// MODIFIED FUNCTION: Function to update filtered methods based on user selections with hierarchical filtering
 function updateFilteredMethods() {
   // Start with all methods
   state.filteredMethods = [...state.methodsData.methods];
@@ -577,17 +496,14 @@ function updateFilteredMethods() {
       const selectedOptions = state.userSelections[category];
       
       if (selectedOptions.length > 0) {
-          // Apply hierarchical logic for hierarchical categories
-          const expandedOptions = getHierarchicalValues(category, selectedOptions);
-          
           state.filteredMethods = state.filteredMethods.filter(method => {
               // Check if the method has this category
               if (!method.attributes[category]) {
                   return false;
               }
-              
-              // Check if any of the expanded options match the method's attributes
-              return expandedOptions.some(option => 
+                  // Check if any of the selected options match the method's attributes
+                  return selectedOptions.some(option => 
+
                   method.attributes[category].includes(option)
               );
           });
@@ -815,18 +731,10 @@ function downloadResults() {
               .attributes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-top: 15px; }
               .attribute-item { background-color: #f5f5f5; padding: 8px; border-radius: 3px; }
               .attribute-name { font-weight: bold; }
-              .hierarchical-note { background-color: #e7f3ff; padding: 10px; border-left: 4px solid #5b92e5; margin-bottom: 20px; }
           </style>
       </head>
       <body>
           <h1>Research Methodology Selection Results</h1>
-          <div class="hierarchical-note">
-              <strong>Note:</strong> For certain categories, selections are hierarchical:
-              <ul>
-                <li><strong>Cultural Permissiveness, Political Sensitivity, Technology Access, Financial Resources, Human Skills:</strong> Selecting "High" includes "Medium" and "Low" options</li>
-                <li><strong>Political Stability:</strong> Selecting "Conflict-affected" includes "Fragile" and "Stable"; selecting "Fragile" includes "Stable"</li>
-              </ul>
-          </div>
           <div class="selection-summary">
               <h2>Your Selection Criteria</h2>
   `;
@@ -835,20 +743,7 @@ function downloadResults() {
   for (const category in state.userSelections) {
       const categoryObj = state.categories.find(c => c.id === category);
       if (categoryObj) {
-          const isHierarchical = HIERARCHICAL_CATEGORIES.includes(category) || category === POLITICAL_STABILITY_CATEGORY;
-          let hierarchicalNote = '';
-          
-          if (category === POLITICAL_STABILITY_CATEGORY) {
-            hierarchicalNote = ' (Political Stability - Hierarchical)';
-          } else if (isHierarchical) {
-            hierarchicalNote = ' (Hierarchical)';
-          }
-          
-          const expandedOptions = getHierarchicalValues(category, state.userSelections[category]);
-          const displayOptions = isHierarchical && state.userSelections[category].length !== expandedOptions.length ? 
-            `${state.userSelections[category].join(', ')} → ${expandedOptions.join(', ')}` : 
-            state.userSelections[category].join(', ');
-          htmlContent += `<p><strong>${categoryObj.name}${hierarchicalNote}:</strong> ${displayOptions}</p>`;
+        htmlContent += `<p><strong>${categoryObj.name}:</strong> ${state.userSelections[category].join(', ')}</p>`;
       }
   }
   
