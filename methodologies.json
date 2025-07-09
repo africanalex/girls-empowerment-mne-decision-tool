@@ -1,10 +1,1930 @@
 {
   "metadata": {
     "source": "methodologies.csv",
-    "generated": "2025-07-09T09:20:14.381Z",
-    "total_categories": 0,
-    "total_methods": 0
+    "generated": "2025-07-09T09:28:04.716Z",
+    "total_categories": 11,
+    "total_methods": 37
   },
-  "categories": [],
-  "methods": []
+  "categories": [
+    {
+      "id": "sem_level",
+      "name": "SEM Level",
+      "options": [
+        "Individual",
+        "Interpersonal",
+        "Community",
+        "Institutional"
+      ]
+    },
+    {
+      "id": "political_stability",
+      "name": "Political Stability",
+      "options": [
+        "Stable",
+        "Fragile",
+        "Conflict Affected"
+      ]
+    },
+    {
+      "id": "cultural_permissiveness",
+      "name": "Cultural Permissiveness",
+      "options": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    {
+      "id": "financial_resources_available",
+      "name": "Financial Resources Available",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "id": "human_resource_skills_available",
+      "name": "Human Resource Skills Available",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "id": "participant_access_to_technology",
+      "name": "Participant Access to Technology",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "id": "political_sensitivity",
+      "name": "Political Sensitivity",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "id": "participation",
+      "name": "Participation",
+      "options": [
+        "Inherently participatory",
+        "Potentially participatory",
+        "Not participatory"
+      ]
+    },
+    {
+      "id": "gender_transformative_potential",
+      "name": "Gender Transformative Potential",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "id": "potential_for_inclusion_of_marginalised_girls",
+      "name": "Potential for Inclusion of Marginalised Girls",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    {
+      "id": "potential_for_behavioural_insight_integration",
+      "name": "Potential for Behavioural Insight Integration",
+      "options": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "name": "Quantitative Surveys (Digital/Online)",
+      "description": "Quantitative Surveys (Digital/Online) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Institutional Ethnography",
+      "description": "Institutional Ethnography methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable"
+        ],
+        "cultural_permissiveness": [
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Gender-Responsive Budget Audits",
+      "description": "Gender-Responsive Budget Audits methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable"
+        ],
+        "cultural_permissiveness": [
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": []
+      }
+    },
+    {
+      "name": "Photovoice",
+      "description": "Photovoice methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Participatory Video",
+      "description": "Participatory Video methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Participatory Mapping (Geographical)",
+      "description": "Participatory Mapping (Geographical) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Community"
+        ],
+        "political_stability": [
+          "Stable"
+        ],
+        "cultural_permissiveness": [
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "One-on-One Mentoring",
+      "description": "One-on-One Mentoring methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Digital Diaries",
+      "description": "Digital Diaries methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High"
+        ]
+      }
+    },
+    {
+      "name": "Storytelling Circles",
+      "description": "Storytelling Circles methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Quantitative Social Network Analysis",
+      "description": "Quantitative Social Network Analysis methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Digital Storytelling",
+      "description": "Digital Storytelling methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Non-Digital Journals",
+      "description": "Non-Digital Journals methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Most Significant Change",
+      "description": "Most Significant Change methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Body Mapping",
+      "description": "Body Mapping methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "In-Depth Interviews (Ad Hoc)",
+      "description": "In-Depth Interviews (Ad Hoc) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Latent Class Analysis",
+      "description": "Latent Class Analysis methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Institutional Journey Mapping",
+      "description": "Institutional Journey Mapping methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Life History Narratives",
+      "description": "Life History Narratives methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Quantitative Scales (Validated)",
+      "description": "Quantitative Scales (Validated) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Low"
+        ],
+        "participation": [],
+        "gender_transformative_potential": [
+          "Medium",
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Critical Incident Techniques",
+      "description": "Critical Incident Techniques methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Participatory Sociograms  (Qualitative Social Network Analysis)",
+      "description": "Participatory Sociograms  (Qualitative Social Network Analysis) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Cross-sectional Survey",
+      "description": "Cross-sectional Survey methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Service Journey Mapping",
+      "description": "Service Journey Mapping methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Social Network Analysis",
+      "description": "Social Network Analysis methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Focus Group Discussions",
+      "description": "Focus Group Discussions methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Intergenerational Dialogues",
+      "description": "Intergenerational Dialogues methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Inherently participatory",
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Individual Surveys with Girls (in-person)",
+      "description": "Individual Surveys with Girls (in-person) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Household Surveys (in-person)",
+      "description": "Household Surveys (in-person) methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Administrative Data",
+      "description": "Administrative Data methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Not participatory"
+        ],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "Real-Time Polling",
+      "description": "Real-Time Polling methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Individual",
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Low"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Medium",
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "Indices and Composite Measures",
+      "description": "Indices and Composite Measures methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Low"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "Quantitative Content Analysis",
+      "description": "Quantitative Content Analysis methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "Community Resource Mapping/Audits",
+      "description": "Community Resource Mapping/Audits methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Community"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "Policy Implementation Tracking",
+      "description": "Policy Implementation Tracking methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "Outcome Mapping",
+      "description": "Outcome Mapping methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Outcome Harvesting",
+      "description": "Outcome Harvesting methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High"
+        ],
+        "human_resource_skills_available": [
+          "High"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "High",
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "High",
+          "Medium"
+        ]
+      }
+    },
+    {
+      "name": "Social Listening/Digital Traces",
+      "description": "Social Listening/Digital Traces methodology for adolescent girl empowerment research",
+      "attributes": {
+        "sem_level": [
+          "Interpersonal",
+          "Community",
+          "Institutional"
+        ],
+        "political_stability": [
+          "Stable",
+          "Fragile",
+          "Conflict Affected"
+        ],
+        "cultural_permissiveness": [
+          "Low",
+          "Medium",
+          "High"
+        ],
+        "financial_resources_available": [
+          "High",
+          "Medium"
+        ],
+        "human_resource_skills_available": [
+          "High",
+          "Medium"
+        ],
+        "participant_access_to_technology": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "political_sensitivity": [
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "participation": [
+          "Potentially participatory"
+        ],
+        "gender_transformative_potential": [
+          "Low"
+        ],
+        "potential_for_inclusion_of_marginalised_girls": [
+          "Medium"
+        ],
+        "potential_for_behavioural_insight_integration": [
+          "Low"
+        ]
+      }
+    }
+  ]
 }
