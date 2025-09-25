@@ -56,8 +56,8 @@
       ]
     },
     {
-      "id": "political_sensitivity",
-      "name": "Political Sensitivity",
+      "id": "level_of_political_sensitivity",
+      "name": "Level of Political Sensitivity",
       "options": [
         "High",
         "Medium",
