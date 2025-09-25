@@ -265,7 +265,7 @@ function createStepContent(stepNumber, group) {
   card.className = 'card';
   card.innerHTML = `
       <h2>${group.name}</h2>
-      <p>Choose options that match your requirements:</p>
+      <p>Select the options that match your requirements. Tick all that apply. If you are unsure, please select all</p>
   `;
   
   // Create options container
