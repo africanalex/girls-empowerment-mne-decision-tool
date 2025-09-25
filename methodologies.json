@@ -1,19 +1,10 @@
 {
   "metadata": {
     "source": "methodologies.csv",
-    "generated": "2025-09-25T10:10:20.707Z",
-    "total_categories": 1,
+    "generated": "2025-09-25T11:03:27.880Z",
+    "total_categories": 0,
     "total_methods": 0
   },
-  "categories": [
-    {
-      "id": "internet",
-      "name": "internet",
-      "options": [
-        "Medium;Participant's Access to Technology eg. phones",
-        "Low;Political Sensitivity - High;Political Sensitivity - Medium;Political Sensitivity - Low;Participation - Inherently participatory;Participation - Potentially participatory;Participation - Not participatory;Potential for Inclusion of Marginalised Girls - High;Potential for Inclusion of Marginalised Girls - Medium;Potential for Inclusion of Marginalised Girls - Low;Potential for Behavioural Insight Integration - High;Potential for Behavioural Insight Integration - Medium;Potential for Behavioural Insight Integration - Low;Link"
-      ]
-    }
-  ],
+  "categories": [],
   "methods": []
 }
