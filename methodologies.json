@@ -126,7 +126,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -175,7 +175,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -224,7 +224,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -265,7 +265,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -305,7 +305,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -346,7 +346,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -392,7 +392,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -435,7 +435,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -485,7 +485,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -532,7 +532,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -577,7 +577,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -627,7 +627,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -679,7 +679,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -729,7 +729,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -780,7 +780,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -832,7 +832,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -875,7 +875,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -922,7 +922,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -969,7 +969,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Low"
         ],
@@ -1012,7 +1012,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -1059,7 +1059,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1107,7 +1107,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1153,7 +1153,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -1198,7 +1198,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -1247,7 +1247,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1295,7 +1295,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1343,7 +1343,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1393,7 +1393,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1443,7 +1443,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1491,7 +1491,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -1535,7 +1535,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1577,7 +1577,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -1620,7 +1620,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "Medium",
           "Low"
         ],
@@ -1664,7 +1664,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1712,7 +1712,7 @@
           "High",
           "Medium"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
@@ -1763,7 +1763,7 @@
           "Medium",
           "Low"
         ],
-        "political_sensitivity": [
+        "level_of_political_sensitivity": [
           "High",
           "Medium",
           "Low"
