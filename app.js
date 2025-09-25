@@ -141,12 +141,12 @@ function groupCategoriesByTheme() {
           categories: [state.categories.find(cat => cat.id === "sem_level")]
       },
       {
-          name: "Context of the Project Operating Environment",
+          name: "Operating Context",
           categories: [
-              state.categories.find(cat => cat.id === "political_stability"),
-              state.categories.find(cat => cat.id === "cultural_permissiveness"),
-              state.categories.find(cat => cat.id === "political_sensitivity"),
-              state.categories.find(cat => cat.id === "participant_access_to_technology")
+              state.categories.find(cat => cat.id === "level_of_political_stability"),
+              state.categories.find(cat => cat.id === "level_of_cultural_permissiveness"),
+              state.categories.find(cat => cat.id === "level_of_political_sensitivity"),
+              state.categories.find(cat => cat.id === "participants_access_to_technology_eg_phones_internet")
           ]
       },
       {
@@ -264,7 +264,7 @@ function createStepContent(stepNumber, group) {
   const card = document.createElement('div');
   card.className = 'card';
   card.innerHTML = `
-      <h2>Select ${group.name}</h2>
+      <h2>${group.name}</h2>
       <p>Choose options that match your requirements:</p>
   `;
   
